@@ -10,8 +10,8 @@ data "azurerm_resource_group" "rsg" {
 }
 
 data "azurerm_log_analytics_workspace" "lag" {
-  name                = element(split("/", var.lwk_id), 8)
-  resource_group_name = element(split("/", var.lwk_id), 4)
+  name                = "lwkspc"
+  resource_group_name = "lwkspc"
 }
 
 data "azurerm_virtual_network" "vnet" {
