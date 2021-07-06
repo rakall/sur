@@ -11,7 +11,7 @@ data "azurerm_resource_group" "rsg" {
 
 data "azurerm_log_analytics_workspace" "lag" {
   name                = "lwkspc"
-  resource_group_name = "lwkspc"
+  resource_group_name = "rg-spc"
 }
 
 data "azurerm_virtual_network" "vnet" {
